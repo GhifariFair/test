@@ -33,13 +33,11 @@ public class DisplayActivity extends AppCompatActivity {
             Test = getIntent().getIntArrayExtra("number1");
             text1.setText("Your ideal daily calorie intake is " + Test[0]);
             text2.setText("Your today's calorie intake plan is " + Test[1]);
-/*            if (Kaloribawah >= 0.25 * Kaloriatas) {
-                Glide.with(DisplayActivity.this).load(mFoto).into(image);
-                ;
+            if (Test[1] >= 0.25 * Test[0]) {
+                image.setImageResource(R.drawable.g);
             } else {
-                Glide.with(DisplayActivity.this).load(mFoto).into(image);
-                ;
-            }*/
+                image.setImageResource(R.drawable.f);
+            }
         }
     }
 }
